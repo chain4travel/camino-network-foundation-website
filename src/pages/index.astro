@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import {Picture} from '@astrojs/image/components';
 ---
 
 <Layout title="Camino Network Foundation" description='Camino Network Foundation'>
@@ -9,7 +10,7 @@ import Hero from '../components/Hero.astro';
 	<main>
 		<Hero></Hero>
 
-		<div class="py-16 md:py-32 bg-gradient-to-b from-caminoSky/20">
+		<div class="py-16 md:py-32 bg-gradient-to-b from-caminoSky/20" id="about">
 			<div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-16">
 				<div class="col-span-6 mb-12 md:mb-0">
 					<svg class="h-24 md:h-32 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21.333 48v58.667m0-58.667h85.334m-85.334 0H16l48-26.667L112 48h-5.333m-85.334 58.667h85.334m-85.334 0H16m90.667 0V48m0 58.667H112M42.667 69.333v16m21.333 0v-16m21.333 0v16"/>
@@ -31,7 +32,7 @@ import Hero from '../components/Hero.astro';
 			</div>
 		</div>
 
-		<div class="py-16 md:py-32">
+		<div class="py-16 md:py-32" id="initiatives">
 			<div class="text-3xl md:text-5xl font-light tracking-tight text-center mb-12">Supporting builders and developers</div>
 			<div class="max-w-screen-xl mx-auto px-8">
 				<div class="md:grid grid-cols-12 gap-6">
@@ -40,35 +41,35 @@ import Hero from '../components/Hero.astro';
 						</svg>
 						<div class="text-2xl md:text-4xl font-light tracking-tight">Grant Program</div>
 						<p class="my-6">The foundation actively engages with developers and travel companies, encouraging their participation in the web3 travel ecosystem through the «Take off» grant program.</p>
-						<a class="bg-[#020617] hover:bg-[#1E293B] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl" href="http://" target="_blank" rel="noopener noreferrer">Apply</a>
+						<a class="bg-[#020617] hover:bg-[#26364e] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl" href="http://" target="_blank" rel="noopener noreferrer">Apply</a>
 					</div>
 					<div class="col-span-6 rounded-xl bg-white hover:bg-caminoSky/30 bg-gradient-to-b from-secondary/30 p-4 md:p-8 transition-colors">
 						<svg class="w-20 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m53.3 13.3-7.5 7.5m0 0a19.3 19.3 0 0 0-11.5.2m11.5-.2a15 15 0 0 1 9.6 9.2M26.7 13.3l7.6 7.7m0 0c-3.9 1.2-8 4-9.8 9m30.9 0c1 2.4 1.3 4.8 1.3 6.7v6.6M55.4 30H60c2.2 0 6.7-1.3 6.7-6.7m-10 20V50c0 1.8-.4 4.2-1.3 6.7m1.3-13.4h10M55.4 56.7c-2 5-6.4 10-15.4 10s-13.4-5-15.4-10m30.8 0H60c2.2 0 6.7 1.3 6.7 6.6M24.5 30c-.8 1.9-1.2 4-1.2 6.7v6.6M24.5 30H20c-2.2 0-6.7-1.3-6.7-6.7m10 20V50c0 1.8.4 4.2 1.3 6.7m-1.3-13.4h-10m11.3 13.4H20c-2.2 0-6.7 1.3-6.7 6.6"/></svg>
 						<div class="text-2xl md:text-4xl font-light tracking-tight">Bug Bounty</div>
 						<p class="my-6">The Camino Network Foundation focuses on the ongoing development and maintenance of the Camino Network blockchain. Everyone is invited to help find and report vulnerabilities of Camino Network.</p>
-						<a class="bg-[#020617] hover:bg-[#1E293B] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl" href="http://" target="_blank" rel="noopener noreferrer">Learn more</a>
+						<a class="bg-[#020617] hover:bg-[#26364e] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl" href="http://" target="_blank" rel="noopener noreferrer">Learn more</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="py-16 md:py-32 bg-gradient-to-t from-caminoSky/20">
+		<div class="py-16 md:py-32 bg-gradient-to-t from-caminoSky/30" id="governing-board">
 			<div class="max-w-screen-xl mx-auto px-8">
 				<div class="text-5xl font-light tracking-tight text-center mb-12">The Governing Board</div>
 				<div class="grid grid-cols-12 gap-6">
-					<div class="col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<div class="w-24 h-24 bg-gray-200 rounded-full mx-auto"></div>
-						<div class="text-4xl mt-6 mb-2 font-light tracking-tight">Thomas Stirnimann</div>
+					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
+						<Picture widths={[400, 800, 1200]} src="/thomas.png" aspectRatio="1:1" alt="descriptive text" fit="cover" class="w-24 h-24 bg-gray-200 rounded-full mx-auto" />
+						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Thomas Stirnimann</div>
 						<div class="text-gray-700">President of the Board of Foundation</div>
 					</div>
-					<div class="col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<div class="w-24 h-24 bg-gray-200 rounded-full mx-auto"></div>
-						<div class="text-4xl mt-6 mb-2 font-light tracking-tight">Thomas Stirnimann</div>
+					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
+						<Picture widths={[400, 800, 1200]} src="/thomas.png" aspectRatio="1:1" alt="descriptive text" fit="cover" class="w-24 h-24 bg-gray-200 rounded-full mx-auto" />
+						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Stefan Roland Leser</div>
 						<div class="text-gray-700">President of the Board of Foundation</div>
 					</div>
-					<div class="col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<div class="w-24 h-24 bg-gray-200 rounded-full mx-auto"></div>
-						<div class="text-4xl mt-6 mb-2 font-light tracking-tight">Thomas Stirnimann</div>
+					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
+						<Picture widths={[400, 800, 1200]} src="/piotr.png" aspectRatio="1:1" alt="descriptive text" fit="cover" class="w-24 h-24 bg-gray-200 rounded-full mx-auto" />
+						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Piotr Wojtowicz</div>
 						<div class="text-gray-700">President of the Board of Foundation</div>
 					</div>
 				</div>
