@@ -1,0 +1,22 @@
+---
+import {Picture} from '@astrojs/image/components';
+---
+
+<div class="py-32">
+    <div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-6 items-center relative">
+        <div class="col-span-7 md:pr-32">
+            <div class="text-4xl md:text-5xl xl:text-7xl font-extralight">
+                Enhancing travel technology for all
+            </div>
+            <p class="my-6 md:text-lg md:leading-7">
+                Camino Network Foundation is a non-profit organization based in Zug, Switzerland driving the development of a blockchain-based ecosystem in the global travel industry.
+            </p>
+            <a class="bg-primary hover:bg-[#1E293B] transition-colors py-3 px-5 inline-block text-white rounded-xl" href="http://" target="_blank" rel="noopener noreferrer">
+                Apply for our Grant Program
+            </a>
+        </div>
+        <div class="col-span-5 rounded-xl overflow-hidden z-10 mt-12 md:mt-0 h-[240px] md:h-auto">
+            <Picture widths={[400, 800, 1200]} src="/pexels-trace-hudson-2724664.jpg" aspectRatio="3:4" alt="descriptive text" fit="cover" />
+        </div>
+    </div>
+</div>
