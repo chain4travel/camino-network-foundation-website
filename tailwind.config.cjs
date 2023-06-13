@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const defaultTheme = require("tailwindcss/defaultTheme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -10,6 +11,9 @@ module.exports = {
                 secondary: "#B440FC",
                 accent: "#35e9ad",
                 caminoSky: "#B5E3FD",
+            },
+            fontFamily: {
+                sans: ["Inter", ...defaultTheme.fontFamily.sans],
             },
 		},
 	},

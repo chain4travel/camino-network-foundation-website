@@ -3,9 +3,9 @@ import {Picture} from '@astrojs/image/components';
 ---
 
 <div class="py-32">
-    <div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-6 items-center relative">
+    <div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-6 items-center">
         <div class="col-span-7 md:pr-32">
-            <div class="text-5xl md:text-6xl xl:text-7xl font-extralight">
+            <div class="text-5xl md:text-6xl xl:text-7xl font-light tracking-tight">
                 Enhancing travel technology for all
             </div>
             <p class="my-6 md:text-lg md:leading-7">
@@ -15,8 +15,9 @@ import {Picture} from '@astrojs/image/components';
                 Apply for our Grant Program
             </a>
         </div>
-        <div class="col-span-5 rounded-xl overflow-hidden z-10 mt-12 md:mt-0 h-[240px] md:h-auto">
-            <Picture widths={[400, 800, 1200]} src="/pexels-trace-hudson-2724664.jpg" aspectRatio="3:4" alt="descriptive text" fit="cover" />
+        <div class="col-span-5 rounded-xl z-10 mt-12 md:mt-0 h-[240px] md:h-auto relative overflow-hidden md:overflow-visible">
+            <img class="hidden md:block w-40 absolute -left-20 top-1/2 -translate-y-1/2" src="/camino-network-foundation-mark.svg" alt="">
+            <Picture widths={[400, 800, 1200]} src="/pexels-trace-hudson-2724664.jpg" aspectRatio="3:4" alt="descriptive text" fit="cover" class="rounded-2xl" />
         </div>
     </div>
 </div>
