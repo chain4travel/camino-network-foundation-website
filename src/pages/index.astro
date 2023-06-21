@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
 import {Picture} from '@astrojs/image/components';
 ---
@@ -76,11 +77,6 @@ import {Picture} from '@astrojs/image/components';
 			</div>
 		</div>
 
-		<div class="py-16 md:py-32 bg-gradient-to-t from-caminoSky/20">
-			<div class="max-w-screen-xl mx-auto px-8">
-				<img class="h-8 md:h-10 mx-auto" src="/camino-network-foundation-logo-mono.svg" alt="">
-			</div>
-		</div>
-
 	</main>
+	<Footer />
 </Layout>
