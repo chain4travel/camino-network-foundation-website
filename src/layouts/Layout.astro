@@ -17,17 +17,17 @@ const { title, description } = Astro.props;
 		<title>{title}</title>
 
 		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://www.foundation.camino.network/">
+		<meta property="og:url" content="https://foundation.camino.network/">
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Camino Network Foundation">
-		<meta property="og:description" content="{{description}}">
-		<meta property="og:image" content="https://www.foundation.camino.network/social.png">
+		<meta property="og:description" content={description}>
+		<meta property="og:image" content="https://foundation.camino.network/social.png">
 	
 		<!-- Twitter Meta Tags -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Camino Network Foundation">
-		<meta name="twitter:description" content="{{description}}">
-		<meta name="twitter:image" content="https://www.foundation.camino.network/social.png">
+		<meta name="twitter:description" content={description}>
+		<meta name="twitter:image" content="https://foundation.camino.network/social.png">
 
 		<!-- Cookie Consent by TermsFeed Privacy Generator https://www.TermsFeed.com -->
 		<script is:inline type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
@@ -54,5 +54,35 @@ const { title, description } = Astro.props;
 	</body>
 </html>
 <style is:global>
+.termsfeed-com---palette-dark.termsfeed-com---nb {
+	background-color: #eee;
+	color: #333;
+}
+.termsfeed-com---palette-dark .cc-nb-title,
+.termsfeed-com---palette-dark .cc-nb-text{
+	color: #333;
+}
+.termsfeed-com---palette-dark .cc-nb-okagree,
+.termsfeed-com---palette-dark .cc-cp-foot-save {
+	color: #fff;
+	background-color: #020617;
+}
+.termsfeed-com---palette-dark .cc-nb-reject {
+	color: #fff;
+	background-color: #666;
+}.termsfeed-com---nb-simple {
+  max-width: 100% !important;
+}
 
+@media screen and (min-width: 600px) {
+  .termsfeed-com---nb-simple {
+    max-width: 70% !important;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .termsfeed-com---nb-simple {
+    max-width: 40% !important;
+  }
+}
 </style>
