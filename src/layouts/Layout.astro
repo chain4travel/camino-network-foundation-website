@@ -63,8 +63,21 @@ const { title, description } = Astro.props;
 	color: #333;
 }
 .termsfeed-com---palette-dark .cc-nb-title,
-.termsfeed-com---palette-dark .cc-nb-text{
+.termsfeed-com---palette-dark .cc-nb-text {
+	font-size: 14px;
+}
+.termsfeed-com---palette-dark .cc-nb-text {
+	line-height: 20px;
+	letter-spacing: -.3px;	
 	color: #333;
+}
+.termsfeed-com---palette-dark .cc-nb-title {
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: -.5px;
+}
+.termsfeed-com---reset p {
+	margin-bottom: 0.5rem;
 }
 .termsfeed-com---palette-dark .cc-nb-okagree,
 .termsfeed-com---palette-dark .cc-cp-foot-save {
@@ -74,19 +87,22 @@ const { title, description } = Astro.props;
 .termsfeed-com---palette-dark .cc-nb-reject {
 	color: #fff;
 	background-color: #666;
-}.termsfeed-com---nb-simple {
-  max-width: 100% !important;
 }
-
+.termsfeed-com---nb .cc-nb-okagree, .termsfeed-com---nb .cc-nb-reject, .termsfeed-com---nb .cc-nb-changep {
+	font-weight: normal;
+}
+.termsfeed-com---nb-simple {
+	max-width: 100% !important;
+}
 @media screen and (min-width: 600px) {
-  .termsfeed-com---nb-simple {
-    max-width: 70% !important;
-  }
+	.termsfeed-com---nb-simple {
+		border-radius: 1rem 0 0 0;
+		max-width: 70% !important;
+	}
 }
-
 @media screen and (min-width: 980px) {
-  .termsfeed-com---nb-simple {
-    max-width: 40% !important;
-  }
+	.termsfeed-com---nb-simple {
+		max-width: 40% !important;
+	}
 }
 </style>
