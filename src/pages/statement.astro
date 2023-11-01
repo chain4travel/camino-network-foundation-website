@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon'
+import { Image } from 'astro:assets';
+import CaminoLogo from '../images/camino-network-foundation-mark.svg'
+---
+
+<Layout
+	title="The official statement from the Camino Network Foundation"
+	description='On behalf of the Camino Network Foundation (hereinafter, the “Foundation”), we are pleased to share the latest updates and plans for the growth of Camino Network.'
+>
+    <div class="py-12 md:py-24 bg-gradient-to-t from-caminoSky/30">
+        <div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-6 items-center">
+            <div class="col-span-7 md:pr-24">
+                <div class="mb-6 text-primary">
+                    October 31, 2023
+                </div>
+                <div class="text-5xl md:text-6xl font-light tracking-tight">
+                    Update by the Camino Network Foundation
+                </div>
+                <p class="my-6 md:text-lg md:leading-7">
+                    We are delighted to present the latest updates and strategic objectives for the expansion of the Camino Network. Our dedication to advancing the travel industry through utilizing blockchain technology remains resolute, and we express our gratitude for the ongoing endorsement from our community and partners.
+                </p>
+            </div>
+            <div class="col-span-5 rounded-xl z-10 mt-12 md:mt-0 h-[240px] md:h-auto relative overflow-hidden md:overflow-visible">
+                <Image src={CaminoLogo} class="w-full h-auto shadow-2xl shadow-blue-500/50 rounded-full" alt="Camino Logo Outline"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="max-w-screen-xl mx-auto px-8 text-lg">
+
+            <div class="w-full md:grid gap-4 grid-cols-12 border-b border-gray-200 py-16 md:py-24">
+                <div class="col-span-4 pr-24">
+                    <div class="text-3xl font-light tracking-tight mb-6">Key Achievements</div>
+                    <Icon name="mdi:trophy-variant-outline" class="w-24 text-gray-600" />
+                </div>
+                <div class="col-span-8">
+                    <p class="mb-6">
+                        In the wake of a highly successful presale event that garnered 4.6 Million CHF in funds raised, we have conceived, tested, and subsequently launched the inaugural Layer-1 blockchain explicitly customized for the travel industry. This achievement was fortified by the participation of, to this date, 36 active validators within a dedicated coalition of, currently, over 95 stakeholders (consortium members), culminating in the full-scale activation of the Camino Network. This development leads the way in an era of enhanced connectivity enabled by blockchain infrastructure, profoundly benefiting travel and travel technology enterprises.
+                    </p>
+                    <p class="mb-6">
+                        The Foundation has sought legal counsel tailored to the Swiss market to ensure compliance with prevailing regulations. Additionally, we are pursuing a similar legal opinion geared towards the European market, affirming the token's adherence to MICA regulatory stipulations.
+                    </p>
+                    <p>
+                        Our commitment is further underscored by the attainment of a commendable milestone: a weekly transaction rate consistently reaching 1,000. We have garnered support from a remarkable assembly of 160 corporate entities, fortifying the network's infrastructure and reach. In addition, we have successfully inaugurated an online community, fostering engagement and interaction within our growing web3 travel ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full md:grid gap-4 grid-cols-12 border-b border-gray-200 py-16 md:py-24">
+                <div class="col-span-4 pr-24">
+                    <div class="text-3xl font-light tracking-tight mb-6">Future Endeavors</div>
+                    <Icon name="mdi:newspaper-variant-multiple" class="w-24 text-gray-600" />
+                </div>
+                <div class="col-span-8">
+                    <p class="mb-6">
+                        We aspire to expand our global footprint by establishing new offices worldwide, reinforcing Camino Network's presence on the global stage. Hence, beginning this month, we are opening up for additional stakeholders, starting the sale of 75 Million CAM, divided into three tranches.
+                    </p>
+                    <p>
+                        We aim to intensify our marketing campaigns and community engagement endeavors. We focus on business development, intending to close additional strategic partnerships and foster collaborative ventures. Our objective remains to provide comprehensive support to all participants within the Camino Network.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full md:grid gap-4 grid-cols-12 border-b border-gray-200 py-16 md:py-24">
+                <div class="col-span-4 pr-24">
+                    <div class="text-3xl font-light tracking-tight mb-6">CAM Token Listing Update</div>
+                    <Icon name="mdi:cube-scan" class="w-24 text-gray-600" />
+                </div>
+                <div class="col-span-8">
+                    <p class="mb-6">
+                        The Board of the Foundation has evaluated the token listing plans for Camino Network. In acknowledgment of the community's eager anticipation, we have decided to postpone the token listing. This strategic choice has been driven by invaluable insights from our trusted advisors and our desire to cultivate an environment for companies and individuals to thrive within the web3 travel ecosystem. As a result, the public token offering will await a significant increase in transactions and use cases. CAM is and will always be a utility and payment token.
+                    </p>
+                    <p class="mb-6">
+                        At this juncture, we refrain from offering a specific date for the listing, opting instead to prioritize the continued growth of our ecosystem. This approach aligns with our commitment to delivering the most optimal listing experience.
+                    </p>
+                    <p class="mb-6">
+                        To sustain our community's active engagement and foster ongoing educational initiatives, we pledge to organize special events tailored to our community's needs.
+                    </p>
+                    <p>
+                        The Foundation stands firmly by your side, and we appreciate your unwavering support as we collaboratively strive toward a bright future for Camino Network.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</Layout>

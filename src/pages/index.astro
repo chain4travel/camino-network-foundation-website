@@ -1,16 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
-import {Picture} from '@astrojs/image/components';
+import { Image } from 'astro:assets';
+
+import ProfileThomas from '../images/thomas.png'
+import ProfileStefan from '../images/stefan.png'
+import ProfilePiotr from '../images/piotr.png'
 ---
 
-<Layout title="Camino Network Foundation" description='The Camino Network Foundation operates with the goal of fostering innovation, collaboration, and education within the travel industry'>
-	<Header></Header>
+<Layout
+	title="Camino Network Foundation"
+	description='The Camino Network Foundation operates with the goal of fostering innovation, collaboration, and education within the travel industry'
+>
 	<main>
-		<Hero></Hero>
-
+		<Hero />
 		<div class="py-16 md:py-32 bg-gradient-to-b from-caminoSky/20" id="about">
 			<div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-16">
 				<div class="col-span-6 mb-12 md:mb-0">
@@ -58,17 +61,17 @@ import {Picture} from '@astrojs/image/components';
 				<div class="text-5xl font-light tracking-tight text-center mb-12">The Governing Board</div>
 				<div class="grid grid-cols-12 gap-6">
 					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<Picture widths={[400, 800, 1200]} src="/thomas.png" aspectRatio="1:1" alt="Portrait of Thomas Stirnimann" fit="cover" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
+						<Image src={ProfileThomas} alt="Portrait of Thomas Stirnimann" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
 						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Thomas Stirnimann</div>
 						<div class="text-gray-700">Chairman of the Council</div>
 					</div>
 					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<Picture widths={[400, 800, 1200]} src="/stefan.png" aspectRatio="1:1" alt="Portrait of Stefan Roland Leser" fit="cover" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
+						<Image src={ProfileStefan} alt="Portrait of Stefan Roland Leser" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
 						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Stefan Roland Leser</div>
 						<div class="text-gray-700">Council Member</div>
 					</div>
 					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<Picture widths={[400, 800, 1200]} src="/piotr.png" aspectRatio="1:1" alt="Portrait of Piotr Wojtowicz" fit="cover" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
+						<Image src={ProfilePiotr} alt="Portrait of Piotr Wojtowicz" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
 						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Piotr Wojtowicz</div>
 						<div class="text-gray-700">Council Member</div>
 					</div>
@@ -77,5 +80,4 @@ import {Picture} from '@astrojs/image/components';
 		</div>
 
 	</main>
-	<Footer />
 </Layout>
