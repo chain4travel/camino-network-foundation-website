@@ -1,16 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import Hero from '../components/Hero.astro';
-import {Picture} from '@astrojs/image/components';
+import { Image } from 'astro:assets';
+
+import ProfileThomas from '../images/thomas.png'
+import ProfileBen from '../images/ben.png'
+import ProfilePiotr from '../images/piotr.png'
 ---
 
-<Layout title="Camino Network Foundation" description='The Camino Network Foundation operates with the goal of fostering innovation, collaboration, and education within the travel industry'>
-	<Header></Header>
+<Layout
+	title="Camino Network Foundation"
+	description='The Camino Network Foundation operates with the goal of fostering innovation, collaboration, and education within the travel industry'
+>
 	<main>
-		<Hero></Hero>
-
+		<Hero />
 		<div class="py-16 md:py-32 bg-gradient-to-b from-caminoSky/20" id="about">
 			<div class="max-w-screen-xl mx-auto px-8 md:grid grid-cols-12 gap-16">
 				<div class="col-span-6 mb-12 md:mb-0">
@@ -18,7 +21,7 @@ import {Picture} from '@astrojs/image/components';
 					</svg>
 					<div class="text-3xl md:text-5xl font-light tracking-tight">The Foundation</div>
 					<p class="my-6">Camino Network Foundation was established in 2023 in Zug, Switzerland. It operates with the goal of fostering innovation, collaboration, and education within the travel industry.</p>
-					<p class="my-6">The Foundation has enough flexibility to utilize the assets supporting its mission, including grant management, IP rights utilization, and securities management. The Foundation operates globally and actively engages in activities aligned with its purpose.</p>
+					<p class="my-6">The Foundation has all the flexibility to utilize the assets supporting its mission, including grant management, IP rights utilization, and securities management. The Foundation operates globally and actively engages in activities aligned with its purpose.</p>
 				</div>
 				<div class="col-span-6">
 					<svg class="h-24 md:h-32 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
@@ -27,7 +30,7 @@ import {Picture} from '@astrojs/image/components';
 					<div class="text-3xl md:text-5xl font-light tracking-tight">Core values</div>
 					<p class="my-6">The Camino Network Foundation supports the development of Camino Network, the first Layer 1 blockchain built specifically for the travel industry by travel technology experts.</p>
 					<p class="my-6">Fostering collaborative practices that facilitate the smooth transition of existing travel businesses into the web3 travel ecosystem, the Foundation enhances efficiency and sustainability across the entire travel industry.</p>
-					<a class="bg-[#020617] hover:bg-[#1E293B] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl mt-2" href="https://camino.network/" target="_blank" rel="noopener noreferrer">Visit Camino Network</a>
+					<a class="bg-gray-950 border border-gray-950 hover:bg-white hover:text-gray-950 transition-colors py-3 px-5 inline-block text-center text-white rounded-xl mt-2" href="https://camino.network/" target="_blank" rel="noopener noreferrer">Visit Camino Network</a>
 				</div>
 			</div>
 		</div>
@@ -41,13 +44,13 @@ import {Picture} from '@astrojs/image/components';
 						</svg>
 						<div class="text-2xl md:text-4xl font-light tracking-tight">Grant program</div>
 						<p class="my-6">The Foundation actively engages with developers and travel companies, encouraging their participation in the web3 travel ecosystem through the «Take off» grant program.</p>
-						<a class="bg-[#020617] hover:bg-[#26364e] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl" href="https://camino.network/grant-program/" target="_blank" rel="noopener noreferrer">Apply</a>
+						<a class="bg-gray-950 border border-gray-950 hover:bg-white hover:text-gray-950 transition-colors py-3 px-5 inline-block text-center text-white rounded-xl" href="https://camino.network/grant-program/" target="_blank" rel="noopener noreferrer">Apply</a>
 					</div>
 					<div class="col-span-6 rounded-xl bg-white hover:bg-caminoSky/30 bg-gradient-to-b from-secondary/30 p-4 md:p-8 transition-colors">
 						<svg class="w-20 mb-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 80 80"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m53.3 13.3-7.5 7.5m0 0a19.3 19.3 0 0 0-11.5.2m11.5-.2a15 15 0 0 1 9.6 9.2M26.7 13.3l7.6 7.7m0 0c-3.9 1.2-8 4-9.8 9m30.9 0c1 2.4 1.3 4.8 1.3 6.7v6.6M55.4 30H60c2.2 0 6.7-1.3 6.7-6.7m-10 20V50c0 1.8-.4 4.2-1.3 6.7m1.3-13.4h10M55.4 56.7c-2 5-6.4 10-15.4 10s-13.4-5-15.4-10m30.8 0H60c2.2 0 6.7 1.3 6.7 6.6M24.5 30c-.8 1.9-1.2 4-1.2 6.7v6.6M24.5 30H20c-2.2 0-6.7-1.3-6.7-6.7m10 20V50c0 1.8.4 4.2 1.3 6.7m-1.3-13.4h-10m11.3 13.4H20c-2.2 0-6.7 1.3-6.7 6.6"/></svg>
 						<div class="text-2xl md:text-4xl font-light tracking-tight">Bug bounty</div>
 						<p class="my-6">The Camino Network Foundation focuses on the ongoing development and maintenance of the Camino Network blockchain. Everyone is invited to help find and report vulnerabilities of Camino Network.</p>
-						<a class="bg-[#020617] hover:bg-[#26364e] transition-colors py-3 px-5 inline-block w-full md:w-auto text-center text-white rounded-xl" href="https://camino.network/bugbounty/" target="_blank" rel="noopener noreferrer">Learn more</a>
+						<a class="bg-gray-950 border border-gray-950 hover:bg-white hover:text-gray-950 transition-colors py-3 px-5 inline-block text-center text-white rounded-xl" href="https://camino.network/bugbounty/" target="_blank" rel="noopener noreferrer">Learn more</a>
 					</div>
 				</div>
 			</div>
@@ -58,18 +61,18 @@ import {Picture} from '@astrojs/image/components';
 				<div class="text-5xl font-light tracking-tight text-center mb-12">The Governing Board</div>
 				<div class="grid grid-cols-12 gap-6">
 					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<Picture widths={[400, 800, 1200]} src="/thomas.png" aspectRatio="1:1" alt="Portrait of Thomas Stirnimann" fit="cover" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
+						<Image src={ProfileThomas} alt="Portrait of Thomas Stirnimann" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
 						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Thomas Stirnimann</div>
 						<div class="text-gray-700">Chairman of the Council</div>
 					</div>
 					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<Picture widths={[400, 800, 1200]} src="/stefan.png" aspectRatio="1:1" alt="Portrait of Stefan Roland Leser" fit="cover" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
-						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Stefan Roland Leser</div>
+						<Image src={ProfileBen} alt="Portrait of Stefan Roland Leser" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
+						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Benjamin Usinger</div>
 						<div class="text-gray-700">Council Member</div>
 					</div>
 					<div class="col-span-12 md:col-span-4 p-4 md:p-8 rounded-xl bg-white text-center">
-						<Picture widths={[400, 800, 1200]} src="/piotr.png" aspectRatio="1:1" alt="Portrait of Piotr Wojtowicz" fit="cover" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
-						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Piotr Wojtowicz</div>
+						<Image src={ProfilePiotr} alt="Portrait of Piotr Wojtowicz" class="w-32 aspect-square bg-gray-200 rounded-full mx-auto" />
+						<div class="text-3xl mt-6 mb-2 tracking-tighter font-light">Piotr Wójtowicz</div>
 						<div class="text-gray-700">Council Member</div>
 					</div>
 				</div>
@@ -77,5 +80,4 @@ import {Picture} from '@astrojs/image/components';
 		</div>
 
 	</main>
-	<Footer />
 </Layout>
