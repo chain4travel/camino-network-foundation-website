@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon'
+import { Image } from 'astro:assets';
+import CaminoLogo from '../images/camino-network-foundation-mark.svg'
+---
+
+<Layout
+	title="The official statement from the Camino Network Foundation"
+	description='On behalf of the Camino Network Foundation (hereinafter, the “Foundation”), we are pleased to share the latest updates and plans for the growth of Camino Network.'
+>
+    <div class="py-12 md:py-20 bg-gradient-to-t from-caminoSky/30">
+        <div class="max-w-screen-xl mx-auto px-8 text-center">
+            <div class="inline-block tracking-tight mb-6 text-transparent uppercase font-medium bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                Camino Network Foundation
+            </div>
+            <div class="text-4xl md:text-6xl font-light tracking-tight">
+                Updates
+            </div>
+        </div>
+    </div>
+
+
+    <div class="py-8 bg-gradient-to-b from-caminoSky/20" id="about">
+        <div class="max-w-screen-lg px-8 mx-auto">
+            <a href="/update-june-12-2024" class="flex gap-8 py-12 px-8 hover:bg-caminoSky/20 rounded-2xl group transition-colors">
+                <Icon name="mdi:newspaper-variant-multiple" class="w-12 md:w-24 text-gray-600 flex-shrink-0 group-hover:text-primary transition-colors" />
+                <div>
+                    <div class="inline-block tracking-tight mb-2 text-transparent uppercase font-medium bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                        NEW
+                    </div>
+                    <div class="text-3xl font-light tracking-tight">Update June 2024</div>
+                    <p class="mt-4">As we approach Q3 2024, we are proud to highlight the development milestones achieved by Camino Network and its ecosystem of partners and individuals.</p>
+                </div>
+            </a>
+            <div class="bg-caminoSky h-px my-8"></div>
+            <a href="/update-november-9-2023" class="flex gap-8 py-12 px-8 hover:bg-caminoSky/20 rounded-2xl group transition-colors">
+                <Icon name="mdi:newspaper-variant-multiple" class="w-12 md:w-24 text-gray-400 flex-shrink-0 group-hover:text-primary transition-colors" />
+                <div>
+                    <div class="text-3xl font-light tracking-tight">Update November 2023</div>
+                    <p class="mt-4">We are delighted to present the latest updates and progress against our strategic objectives as we work to expand Camino Network. We remain committed to moving the travel industry forward by utilizing blockchain technology. We are very grateful for the growing support and commitment from our community and partners.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <a href="/update-november-9-2023">
+            
+        </a>
+        <a href="/update-june-12-2024">
+            
+        </a>
+    </div>
+
+</Layout>
