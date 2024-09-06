@@ -6,6 +6,7 @@ import { Image } from 'astro:assets';
 import ProfileThomas from '../images/thomas.png'
 import ProfileBen from '../images/ben.png'
 import ProfilePiotr from '../images/piotr.png'
+import ProfileYessing from '../images/yessin.png'
 ---
 
 <Layout
@@ -61,19 +62,24 @@ import ProfilePiotr from '../images/piotr.png'
 			<div class="max-w-screen-xl px-8 mx-auto">
 				<div class="mb-12 text-5xl font-light tracking-tight text-center">The Governing Board</div>
 				<div class="grid grid-cols-12 gap-6">
-					<div class="col-span-12 p-4 text-center bg-white md:col-span-4 md:p-8 rounded-xl">
+					<div class="col-span-12 p-4 text-center bg-white md:col-span-3 md:p-8 rounded-xl shadow">
 						<Image src={ProfileThomas} alt="Portrait of Thomas Stirnimann" class="w-32 mx-auto bg-gray-200 rounded-full aspect-square" />
-						<div class="mt-6 mb-2 text-3xl font-light tracking-tighter">Thomas Stirnimann</div>
+						<div class="mt-6 mb-2 text-2xl font-light tracking-tighter">Thomas Stirnimann</div>
 						<div class="text-gray-700">Chairman of the Council</div>
 					</div>
-					<div class="col-span-12 p-4 text-center bg-white md:col-span-4 md:p-8 rounded-xl">
+					<div class="col-span-12 p-4 text-center bg-white md:col-span-3 md:p-8 rounded-xl shadow">
 						<Image src={ProfileBen} alt="Portrait of Stefan Roland Leser" class="w-32 mx-auto bg-gray-200 rounded-full aspect-square" />
-						<div class="mt-6 mb-2 text-3xl font-light tracking-tighter">Benjamin Usinger</div>
+						<div class="mt-6 mb-2 text-2xl font-light tracking-tighter">Benjamin Usinger</div>
 						<div class="text-gray-700">Council Member</div>
 					</div>
-					<div class="col-span-12 p-4 text-center bg-white md:col-span-4 md:p-8 rounded-xl">
+					<div class="col-span-12 p-4 text-center bg-white md:col-span-3 md:p-8 rounded-xl shadow">
 						<Image src={ProfilePiotr} alt="Portrait of Piotr Wojtowicz" class="w-32 mx-auto bg-gray-200 rounded-full aspect-square" />
-						<div class="mt-6 mb-2 text-3xl font-light tracking-tighter">Piotr Wójtowicz</div>
+						<div class="mt-6 mb-2 text-2xl font-light tracking-tighter">Piotr Wójtowicz</div>
+						<div class="text-gray-700">Council Member</div>
+					</div>
+					<div class="col-span-12 p-4 text-center bg-white md:col-span-3 md:p-8 rounded-xl shadow">
+						<Image src={ProfileYessing} alt="Portrait of Piotr Wojtowicz" class="w-32 mx-auto bg-gray-200 rounded-full aspect-square" />
+						<div class="mt-6 mb-2 text-2xl font-light tracking-tighter">Yessin Schiegg</div>
 						<div class="text-gray-700">Council Member</div>
 					</div>
 				</div>
